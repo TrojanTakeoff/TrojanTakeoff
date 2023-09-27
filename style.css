@@ -1,0 +1,324 @@
+/* The webpage overall styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+
+/*  This is for styling the main container that holds everything */
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #060606;
+    overflow-x: hidden
+}
+
+/* This styles the navbar and its contents */
+#navbar {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+/* This styles the logo in the navbar */
+#navbar #logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 3%;
+    top: -5px;
+}
+
+/* This styles the logo image to be used in the navbar */
+#navbar #logo img {
+    height: 60px;
+    width: 60px;
+}
+.tab-content {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+/* This styles the unlisted links in the navbar */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+#navbar ul li {
+    height: 60px;
+    width: 80px;
+    margin: 0 30px;
+    display: grid;
+    place-items: center;
+    color: grey;
+}
+
+
+/* This sets the hover action of the navbar links */
+#navbar ul:hover .active {
+    background: none;
+    border: none;
+}
+/* .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  } */
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tab-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    font-weight: bold;
+  }
+
+/* This styles the descriptions of the 3D object */
+#content {
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 12%;
+    top: calc(50% - 250px);
+}
+
+/* This styles the heading in the 3D description */
+#content h2 {
+    font-size: 140px;
+    color: grey;
+}
+
+/* This styles the paragraph in the 3D description*/
+#content p {
+    font-size: 20px;
+    color: rgb(189, 189, 189);
+}
+
+/* This styles the button in the 3D description*/
+#content button {
+    width: 35%;
+    height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 5vh;
+    margin-left: center;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: dodgerblue;
+    color: white;
+}
+
+/* This adds some hover effects over the button */
+#content button:hover {
+    background: navy;
+}
+
+/* This styles the social media icons*/
+#icons {
+    height: 500px;
+    width: 140px;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 250px);
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+/* This styles the social media icons logos*/
+#icons #iconsLogo {
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* This styles the social media icons logos images*/
+#icons #iconsLogo i {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin: 10px;
+    color: grey;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+/* This styles the aside container */
+#aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: -80%;
+}
+
+
+/* This styles the 3D object inserted in the aside container */
+#aSide model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    right: 35%;
+}
+/* Styling for tab links */
+#navbar ul li button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: rgb(223, 219, 219);
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Active tab link styling */
+#navbar ul li button.active {
+    color: dodgerblue;
+}
+/* Styling for member profile cards */
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 360px) {
+
+    .navbar{
+        /* left: 10px;
+        transition: left 0.3s ease-in-out;
+        width : calc(100% - 190px); 
+        left: calc(50% - 150px);
+        font: size 5px; */
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+        font-size: 12px;
+        
+    }
+    #aSide {
+        height: 600px;
+        width: 600px;
+        position: absolute;
+        top: calc(50% - 250px);
+        right: 35%;
+    }
+    #aSide model-viewer {
+        height:360px;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+
+/* This styles the unlisted links in the navbar */
+    #navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+    #navbar ul li {
+    height: 20px;
+    width: 50px;
+    margin: 0 10px;
+    display: grid;
+    place-items: center;
+    color: grey;
+}
+  /* Make the font size of the 3D description heading smaller */
+  #content h2 {
+    font-size: 30px;
+}
+ /* Make the font size of the 3D description paragraph smaller */
+ #content p {
+    font-size: 16px;
+}
+ /* Make the font size of member profile card smaller */
+ .member-card h3 {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.member-card p {
+    font-size: 10px; /* Adjust the font size as needed */
+}
+.members {
+    grid-template-columns: 1fr; /* Display 1 card per row on small screens */
+    gap: 10px; /* Adjust gap if needed */
+    /* ... other properties ... */
+}
+.member-card {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+    /* Adjust width and height for mobile devices */
+    width: 30%; /* Make the card width 100% of its container */
+     /* Let the height adjust based on content */
+     /* Adjust the top margin to move the cards up */
+    height: 10vh;
+}
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #faf8f8;
+    overflow-x: hidden
+}
+.member-card img {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
+.frame {
+    width: 38%; /* Make the iframe width 100% of its container */
+    height: 50px; /* Set a fixed height for better visibility */
+}
+
+    
+}
+
+

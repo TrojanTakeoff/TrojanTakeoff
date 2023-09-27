@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Object</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Imports a model-viewer JavaScript code -->
+    <!-- It helps to handle how the 3D Object would be displayed -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script
+      src="https://kit.fontawesome.com/7c97071ea6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div id="container">
+      <!-- Navbar container -->
+      <div id="navbar">
+        <ul>
+          <li><button class="tab-link" data-tab="home-tab">Home</button></li>
+          <li>
+            <button class="tab-link" data-tab="about-tab">About Us</button>
+          </li>
+          <li>
+            <button class="tab-link" data-tab="projects-tab">
+              NASA Projects
+            </button>
+          </li>
+          <li>
+            <button class="tab-link" data-tab="engagement-tab">
+              STEM Engagement
+            </button>
+          </li>
+          <li>
+            <button class="tab-link" data-tab="involved-tab">
+              Get Involved
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- This is for holding the 3D object -->
+
+      <!-- Content container -->
+      <div id="content">
+        <!-- Content about the 3D object -->
+
+        <div class="tab-content active-tab" id="home-tab">
+          <h2>Trojan Takeoff</h2>
+          <p>A Passionate team of Engineers</p>
+          <button>Join</button>
+          <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer
+              src="solar_system_paint_3d/scene.gltf"
+              alt="Planets"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="solar_system_paint_3d/scene.gltf"
+            ></model-viewer>
+          </div>
+        </div>
+
+        <div class="tab-content" id="about-tab">
+          <!-- <div class="content-with-3d">
+            <div id="aSide"> -->
+          <!-- 3D objsect -->
+          <!-- This inserts the 3D object inside the aside container -->
+          <!-- <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer> -->
+
+<!--about us section -->
+
+          <div class="about-header">
+            <span>Meet Our Members</span>
+          </div>
+<!-- Team Leaders card slider-->
+          <section-left>
+            <div class="swiper mySwiper about-container">
+              <div class="swiper-wrapper content-1">
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="/photos/Makhaila.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">MaKhaila Bentil</span>
+                      <span class="profession">Student Leader</span>
+                      <span class="description">Team President</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/michael.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Michael Archibong</span>
+                      <span class="profession">Structural Engineer</span>
+                      <span class="description"> Team Lead</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="Brenton.jpeg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Brenton Wynter</span>
+                      <span class="profession">Safety officer</span>
+                      <span class="description"> Co-lead </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/alicia.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Alicia Williamson</span>
+                      <span class="profession">Social Media Chair</span>
+                      <span class="description"> Team Lead</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/marcus.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Marcus Scott</span>
+                      <span class="profession">Safety Officer</span>
+                      <span class="description"> Co-lead</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/nick.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Nicholas Pollard</span>
+                      <span class="profession">Task Manager</span>
+                      <span class="description"> Team Lead</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/Jeremy.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Jeremy Johnson</span>
+                      <span class="profession">STEM Engagement Lead</span>
+                      <span class="description"> Team Lead</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Elisha Barnes</span>
+                      <span class="profession">Payload Engineer </span>
+                      <span class="description"> Co-Lead </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/Kofi.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Kofi Mason</span>
+                      <span class="profession">Payload Engineer</span>
+                      <span class="description"> Co-Lead </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/Anthony.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Anthony Martin</span>
+                      <span class="profession">Rocket Engineer</span>
+                      <span class="description"> Co-Lead </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/Xavier B.jpg" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Xavier Baughans</span>
+                      <span class="profession">Rocket Engineer</span>
+                      <span class="description"> Co-lead </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="Headshot.JPG" alt="" />
+                    </div>
+                    <div class="social-media">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name-profession">
+                      <span class="name">Mihiretu Jackson</span>
+                      <span class="profession">Web developer</span>
+                      <span class="description"> Team Lead/span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section-left>
+ <!-- Team memebers section-->
+          <section-right>
+           
+            <div class=" container-1">
+              <div class="  content-2">
+                <div class="  card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/Atilia.jpg" alt="" />
+                    </div>
+                    <p1>Atilia Thomas</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Cong Nguyen</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Cameron Davis</p>
+                  </div>
+                </div>
+                <div class=" card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Edward Phillipd IV</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/favour.jpg" alt="" />
+                    </div>
+                    <p1>Favour Adesoye</p>
+                  </div>
+                </div>
+                
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Izaiah Ridley</p>
+                  </div>
+                </div> 
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/joshua j.jpg" alt="" />
+                    </div>
+                    <p1>Joshua Johnson</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/Xavier B.jpg" alt="" />
+                    </div>
+                    <p1>Xavier Baughans</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Jharyta Loveless</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/justin terry.jpg" alt="" />
+                    </div>
+                    <p1>Justin Terry</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="photos/john Williams.jpg" alt="" />
+                    </div>
+                    <p1>John Williams </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Kofi Acheampong </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Kiara Wilson </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Melody Enwerem </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Olivia Agbo </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Quincey Ransey </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Rashai Enoch </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Stefan Robinson </p>
+                  </div>
+                </div>
+         
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Salaah Alston </p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Sarai Gholson</p>
+                  </div>
+                </div>
+                <div class="card-2">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="" alt="" />
+                    </div>
+                    <p1>Stefan Robinson </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section-right>
+        </div>
+ 
+<!--  projects sections -->
+        <div class="tab-content" id="projects-tab">
+          <h1>NASA Projects</h1>
+          <p>Explore some of our exciting projects</p>
+          <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer
+              src="solar_system_paint_3d/scene.gltf"
+              alt="VR Headset"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="solar_system_paint_3d/scene.gltf"
+            ></model-viewer>
+          </div>
+        </div>
+        <div class="tab-content" id="engagement-tab">
+<<<<<<< HEAD
+            <h1>STEM Engagement</h1>
+            <p>Discover our STEM Engagement</p>
+            <!-- <div id="aSide"> -->
+                <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <!-- <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer> -->
+            <embed src="https://www.nasa.gov/specials/kidsclub/games/rocket-builder/index.html" style="width:500px; height: 300px;">
+                
+            <!-- </div> -->
+=======
+          <h1>STEM Engagement</h1>
+          <p>Discover our STEM Engagement</p>
+          <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer
+              src="solar_system_paint_3d/scene.gltf"
+              alt="VR Headset"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="solar_system_paint_3d/scene.gltf"
+            ></model-viewer>
+          </div>
+>>>>>>> 9100ceb083b3997f3ab70b7652514233f327890c
+        </div>
+        <div class="tab-content" id="involved-tab">
+          <h1>Get Involved / Sign Up</h1>
+          <p>Join us and be a part of our community! Sign up for updates</p>
+          <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer
+              src="solar_system_paint_3d/scene.gltf"
+              alt="VR Headset"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="solar_system_paint_3d/scene.gltf"
+            ></model-viewer>
+          </div>
+
+          <div></div>
+          <div class="frame">
+            <!-- Embed Google Form here -->
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSez-f1RRD7pDKuaPaRmqCf7NTCLkemd7-8BPbrMBiEkV6pMmQ/viewform"
+              width="100%"
+              height="700"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.js"> </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper", {
+          // Optional parameters
+          observer: true,
+          observeParents: true,
+          parallax: true,
+          slidesPerView: 1,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          /* breakpoints: {
+            769: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+          },
+*/
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    })
+</script> 
+
+
+
+  </body>
+</html>
