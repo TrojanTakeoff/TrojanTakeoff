@@ -183,4 +183,65 @@ align-items: center;
 flex-direction: column;
 padding: 10px;
     }
+   
+@media (max-width:1300px) { 
+  section-right .container-1{ 
+   position:relative;
+  display:grid;
+  grid-template-columns:auto auto auto;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  border: 3px solid rgb(41, 183, 72);
+  margin-top: 30px; 
+  padding: 10px;
+  overflow: visible;
+  overflow-y: hidden;
+
+    }
+section-right .container-1 .content-2{
+   width: 100%;
+   display: flex;
+flex-wrap: wrap;
+      }
+  }
+  .about-header{
+    font-size: 50px;
+    position: relative; 
+    top: -30px;
+  }
+  section-right .card-2{
+    
+   width: 200px;
+   height: 160px;
+ 
+  }
+  .about-header{
+    font-size: 50px;
+    position: relative; 
+    top: -80px;
+   
+  }
   
+  /*
+  @media (max-width: 768px) { 
+section-right .container-1{ 
+      position:absolute;
+     display:flex;
+     flex-direction:column ;
+     right: 80%;
+     top: 100;
+     width: 50%;
+     height: 50%;
+     border: 3px solid rgb(171, 38, 147);
+     margin-top: 30px; 
+       }
+  section-right .container-1 .content-2{
+         display:grid;
+         grid-template-columns:repeat(5,1fr);
+         overflow: scroll;
+         overflow-y: scroll;
+         }
+
+  }
