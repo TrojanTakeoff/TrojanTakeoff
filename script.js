@@ -22,3 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+const hiddens = document.querySelectorAll(".hidden");
+document.addEventListener("DOMContentLoaded", () => {
+  hiddens.forEach((hid) => hid.classList.remove("hidden"));
+});
+const form = document.getElementById("send-it");
+const roket = document.getElementById("roket");
+const msg = document.getElementById("msg");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  e.target.style.animationPlayState = "running";
+  roket.style.animationPlayState = "running";
+msg.style.zIndex = 2;
+  msg.style.opacity = 1;
+});
+
