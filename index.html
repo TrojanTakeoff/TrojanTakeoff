@@ -38,10 +38,24 @@
       <!-- Navbar container -->
       <div id="navbar">
         <ul>
-          <li><button class="tab-link" data-tab="home-tab">Home</button></li>
+          <li><button class="tab-link" data-tab="home-tab">Home</button></li> 
+          <!---
           <li>
             <button class="tab-link" data-tab="about-tab">About Us</button>
-          </li>
+          </li> --> 
+        <div class="dropdown-show">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+             <a class="dropdown-item" href="#"><button class = "tab-link" data-tab = "meet-tab">Meet The Team</button></a>
+             <a class="dropdown-item" href="#"><button class = "tab-link" data-tab = "team-tab">Team In Action</button></a>
+             <a class="dropdown-item" href="#"><button class = "tab-link" data-tab = "description-tab">Project Description</button></a>
+             <a class="dropdown-item" href="#"><button class = "tab-link" data-tab = "faq-tab">FAQ</button></a>
+            </div>
+          </div> 
+          <!--<li><button class="tab-link" data-tab="about-tab">About Us</button></li>-->
+        
           <li>
             <button class="tab-link" data-tab="projects-tab">
               NASA Projects
@@ -474,7 +488,42 @@
               </div>
             </div>
           </section-right>
-        </div>
+        </div> 
+
+    <!-- Team in Action -->
+    <div class = "tab-content" id = "team-tab"> 
+        <h3>Articles </h3>  
+        <a href = "https://www.bet.com/article/x094gb/hbcu-virginia-state-university-students-selected-for-nasa-competition">VSU Selected For NASA Competition</a> 
+        <img src = "nasa.webp"> 
+        <a href = "https://richmondfreepress.com/news/2023/nov/02/vsu-team-takes-nasa-challenge/">VSU Team Takes Off With Nasa Challenge</a> 
+        <img src = "vsulogo.jpg">  
+        <a href = "https://urbanviewsrva.com/2023/10/31/it-is-rocket-science-for-a-team-of-vsu-students/">Rocket Science</a> 
+        <img src = "vsutrojan.webp"> 
+        <a href = "https://www.wric.com/news/local-news/the-tri-cities/vsu-students-to-participate-in-nasa-rocketry-competition/"> ABC 8 News</a>
+
+
+    </div>
+    <!-- Project Description --> 
+    <div class = "tab-content" id = "description-tab"> 
+        <h1 class = "h11">Project Description</h1>  
+        <h2 class = "h22">Overview</h2>
+        <p>Nasa Student Launch is a research-based competitive engineering competition. Before getting accepted into the competition, teams have to write and submit a proposal. After teams are selected, students spend 9 months designing, building, testing, and launching rockets with a payload component that support SLS amd Artemis. 
+            Teams must complete a Preliminary Design Review, Critical Design Review, Flight Readiness Review, and Launch Readiness Review before final flight. After the final launch a Post Launch Assessement Review is conducted. This competition provides students with experience in developing rockets and exploring different engineering concepts.
+              </p>
+        <h3 class = "h33">History</h3>
+        <p>Trojan Takeoff Team is the first rocket launch team at Virginia State University. The team was founded in 2023. The team consists of students majoring in Mechanical Engineering, Computer Engineering, and Computer Science. </p>
+        <h4 class = "h44">Mission Statement</h4> 
+        <p>The purpose of Trojan Takeoff is to fulfill all of the requirements outlined by the NASA Student Launch Handbook and successfully launch a rocket.  </p>
+    </div>
+    <!-- FAQ tab-->
+    <div class = "tab-content" id = "faq-tab"> 
+        <h1 class = "h1">How can I join the team?</h1>  
+        <p>Team members for this year's rocket launch have already been finalized. Updates for next year's launch will be posted on our website in early August. Check back again for updates next year or email trojantakeoff@gmail.com.</p>
+        <h2 class = "h2">How can I support the team?</h2>  
+        <p>The Trojan Takeoff Team is looking foward to participate in the NASA rocket launch for the first time. Any dontaions provided will be used to cover competition expenses such as stem engagement, rocket parts, traveling, etc. Any company who decides to become a sponsor for the VSU team will be recognized locally and nationally at the competition. 
+            Money isn't the only way to support the team! If you are currently working in the industry as a scientist, engineer, or have experience building rockets. Reach out to trojantakeoff@gmail.com. We are always looking to gain more mentors and learn from working professionals.
+        </p>
+    </div>
  
 <!--  projects sections -->
         <div class="tab-content" id="projects-tab">
