@@ -341,8 +341,11 @@
 	min-height: 500px;
 	background-image: url(https://cdn.spacetelescope.org/archives/images/screen/heic0602a.jpg);
 	box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.85);
-    margin-right: -490px;
-    margin-top: -550px;
+   
+    margin-top: -650px;
+    margin-right: -200px;
+  
+    
     /* margin-right: 200px; */
 }
 
@@ -553,6 +556,25 @@ margin-top: 70px;
 	letter-spacing: 1px;
   }
   
+  
+  .iframeContainer{
+    position: relative;
+    width: 380px;
+    height: 660px;
+    overflow: hidden;
+    }
+
+
+.iframeContent{
+    top: -530px;
+    left: -92px;
+    width: 580px;
+    height: 1200px;
+    overflow: hidden;
+    
+    position: absolute;
+    }
+
   
 
 
