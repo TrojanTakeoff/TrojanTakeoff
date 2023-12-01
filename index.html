@@ -31,6 +31,11 @@
       src="https://kit.fontawesome.com/7c97071ea6.js"
       crossorigin="anonymous"
     ></script>
+
+      <!-- Dropdown Menu CSS--> 
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+      <link rel = "stylesheet" href = "dropdown.css"> 
   </head>
   <body>
     <!-- Main Container -->
@@ -39,9 +44,16 @@
       <div id="navbar">
         <ul>
           <li><button class="tab-link" data-tab="home-tab">Home</button></li>
-          <li>
-            <button class="tab-link" data-tab="about-tab">About Us</button>
+          <li class="dropdown">
+            <button>About Us</button>
+            <div class="dropdown-content">
+              <a href="#"><button class="tab-link" data-tab="meet-tab">Meet The Team</button></a>
+              <a href="#"><button class="tab-link" data-tab="team-tab">Team In Action</button></a>
+              <a href="#"><button class="tab-link" data-tab="description-tab">Project Description</button></a>
+              <a href="#"><button class="tab-link" data-tab="faq-tab">FAQ</button></a>
+            </div>
           </li>
+          
           <li>
             <button class="tab-link" data-tab="projects-tab">
               NASA Projects
@@ -83,7 +95,7 @@
           </div>
         </div>
 
-        <div class="tab-content" id="about-tab">
+        <div class="tab-content" id="meet-tab">
           <!-- <div class="content-with-3d">
             <div id="aSide"> -->
           <!-- 3D objsect -->
@@ -475,7 +487,42 @@
             </div>
           </section-right>
         </div>
- 
+        <!-- Team in Action -->
+    <div class = "tab-content" id = "team-tab"> 
+      <h3>Articles </h3> 
+      <img src = "Nasa.png">  
+      <a href = "https://www.bet.com/article/x094gb/hbcu-virginia-state-university-students-selected-for-nasa-competition">HBCU Virginia State University students selected for NASA competitionn</a> 
+      <img src = "vsu.png"> 
+      <a href = "https://www.wric.com/news/local-news/the-tri-cities/vsu-students-to-participate-in-nasa-rocketry-competition/"> ABC 8 News: vsu students to participate in nasa rocketry competition</a>
+      <img src = "team2.png"> 
+      <a href = "https://urbanviewsrva.com/2023/10/31/it-is-rocket-science-for-a-team-of-vsu-students/">Urban Views RVA: IT IS “ROCKET SCIENCE” FOR A TEAM OF VSU STUDENTS</a> 
+     
+      
+
+  </div>
+  <!-- Project Description --> 
+  <div class = "tab-content" id = "description-tab"> 
+      <h1 class = "h11">Project Description</h1>  
+      <p>Nasa Student Launch is a research-based competitive engineering competition. Before getting accepted into the competition, teams have to write and submit a proposal. After teams are selected, students spend 9 months designing, building, testing, and launching rockets with a payload component that support SLS amd Artemis. 
+          Teams must complete a Preliminary Design Review, Critical Design Review, Flight Readiness Review, and Launch Readiness Review before final flight. After the final launch a Post Launch Assessement Review is conducted. This competition provides students with experience in developing rockets and exploring different engineering concepts.
+            </p>
+      <h3 class = "h33">History</h3>
+      <p>Trojan Takeoff Team is the first rocket launch team at Virginia State University. The team was founded in 2023. The team consists of students majoring in Mechanical Engineering, Computer Engineering, and Computer Science. </p>
+      <h4 class = "h44">Mission Statement</h4> 
+      <p>The purpose of Trojan Takeoff is to fulfill all of the requirements outlined by the NASA Student Launch Handbook and successfully launch a rocket.  </p>
+  </div>
+  <!-- FAQ tab-->
+  <div class = "tab-content" id = "faq-tab">  
+      <h1 class = "h11">How can I join the team?</h1>  
+      <p>Team members for this year's rocket launch have already been finalized. Updates for next year's launch will be posted on our website in early August. Check back again for updates next year or email trojantakeoff@gmail.com.</p>
+      <br>
+      <h1 class = "h11">How can I support the team?</h1>  
+    
+      <p>The Trojan Takeoff Team is looking foward to participate in the NASA rocket launch for the first time. Any dontaions provided will be used to cover competition expenses such as stem engagement, rocket parts, traveling, etc. Any company who decides to become a sponsor for the VSU team will be recognized locally and nationally at the competition. 
+          Money isn't the only way to support the team! If you are currently working in the industry as a scientist, engineer, or have experience building rockets. Reach out to trojantakeoff@gmail.com. We are always looking to gain more mentors and learn from working professionals.
+      </p>
+  </div>
+
 <!--  projects sections -->
         <div class="tab-content" id="projects-tab">
           <h1>NASA Projects</h1>
@@ -496,49 +543,35 @@
         <div class="tab-content" id="engagement-tab">
           <!-- <h1>STEM Engagement</h1>
           <p>Discover our STEM Engagement</p> -->
-
           <div class="iframeContainer"> 
 
             <embed src="https://gameis.net/building-games/30893-build-a-rocket.html" scrolling="no" class="iframeContent" style="overflow: hidden;">
 
           </div>
            
+          <div class="response">
+            <form action="process.php" class="form-login" method="post">
+              <label for="login-input-user" class="login__label">
+                <p class="info"> Name:First and last </p>
+              </label>
+              <input id="login-input-user" name="Name"class="login__input" type="text" required />
+              <label for="login-input-password" class="login__label"><p class="info" required>
+                How did you like the game? what are some rocket models you have in mind,what do you want it to look like?</p>
+              </label>
+              <!-- <input id="login-input-password" class="login__input" type="text" /> -->
+              <!-- <input type="text" id="shrinking-input"> -->
+              <textarea id="shrinking-input"name="Response" required></textarea>
+              <span id="input-helper"></span>
 
-            <div class="response">
-              <form action="" class="form-login">
-                <label for="login-input-user" class="login__label">
-                  <p class="info"> Name:First and last </p>
-                </label>
-                <input id="login-input-user" class="login__input" type="text" />
-                <label for="login-input-password" class="login__label"><p class="info">
-                  How did you like the game? what are some rocket models you have in mind,what do you want it to look like?</p>
-                </label>
-                <!-- <input id="login-input-password" class="login__input" type="text" /> -->
-                <!-- <input type="text" id="shrinking-input"> -->
-                <textarea id="shrinking-input"></textarea>
-                <span id="input-helper"></span>
 
-    
-                
-               
-                <div class="login">
-                <button class="login__submit" disabled>Submit</button>
-              </div>
-              </form>
+              <div class="login">
+              <button type="submit" name="create" class="login__submit" disabled>Submit</button>
             </div>
+            </form>
+          </div>
+            
 
-              <div class="Three-model">
-              <!-- 3D objsect -->
-              <!-- This inserts the 3D object inside the aside container -->
-                <model-viewer
-                  src="solar_system_paint_3d/scene.gltf"
-                  alt="VR Headset"
-                  auto-rotate
-                  camera-controls
-                  ar
-                  ios-src="solar_system_paint_3d/scene.gltf"
-                ></model-viewer>
-              </div>
+            
           </div>
         <div class="tab-content" id="involved-tab">
           <h1>Get Involved / Sign Up</h1>
