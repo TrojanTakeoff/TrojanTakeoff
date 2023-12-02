@@ -5,6 +5,7 @@
     <title>Trojan Takeoff</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Imports a model-viewer JavaScript code -->
     <!-- It helps to handle how the 3D Object would be displayed -->
     <script
@@ -55,9 +56,7 @@
           </li>
           
           <li>
-            <button class="tab-link" data-tab="projects-tab">
-              NASA Projects
-            </button>
+            <a href="nasa-projects.html"><button class="tab-link">NASA Projects</button></a>
           </li>
           <li>
             <button class="tab-link" data-tab="engagement-tab">
@@ -524,22 +523,43 @@
   </div>
 
 <!--  projects sections -->
-        <div class="tab-content" id="projects-tab">
-          <h1>NASA Projects</h1>
-          <p>Explore some of our exciting projects</p>
-          <div id="aSide">
-            <!-- 3D objsect -->
-            <!-- This inserts the 3D object inside the aside container -->
-            <model-viewer
-              src="solar_system_paint_3d/scene.gltf"
-              alt="VR Headset"
-              auto-rotate
-              camera-controls
-              ar
-              ios-src="solar_system_paint_3d/scene.gltf"
-            ></model-viewer>
-          </div>
+<div class="tab-content" id="projects-tab">
+  <h1>NASA Projects</h1>
+  <p>Explore some of our exciting projects</p>
+
+  <!-- <div class="slideshow-container">
+    <div class="w3-content">
+      <img class="mySlides" src="launchImages/launch3.jpeg" style="width:100%;display:none">
+      <img class="mySlides" src="launchImages/launch2.jpeg" style="width:100%">
+      <img class="mySlides" src="launchImages/launch1.jpeg" style="width:100%;display:none">
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="launchImages/launch3.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
         </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="launchImages/launch2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="launchImages/launch1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+        </div>
+      </div>
+    </div>
+  </div> -->
+  
+
+  <div class="videos-container">
+    <!-- launch videos -->
+    <iframe width="560" height="215" src="https://www.youtube.com/embed/IV5W1wXiJiY?si=MmKCQUwGURinHRKc&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <br>
+   <br>
+   <br>
+    <iframe width="560" height="215" src="https://www.youtube.com/embed/XxxEdOMttxU?si=UzRQ1mxh_E8G0Cw_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
         <div class="tab-content" id="engagement-tab">
           <!-- <h1>STEM Engagement</h1>
           <p>Discover our STEM Engagement</p> -->
@@ -643,6 +663,26 @@
           },
         });
     })
+
+    function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
 </script> 
 
 
